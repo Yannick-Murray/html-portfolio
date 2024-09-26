@@ -47,18 +47,33 @@
         <label for="exampleFormControlInput1">Email address</label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
       </div>
-      </div>
       <div class="form-group">
-        <label for="exampleFormControlTextarea1">What you want to say?</label>
+        <label for="exampleFormControlTextarea1">Why bother? This form doesn't work, so don't even try!" =D</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Everything here is true!</label>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#emailModal" style="margin-top: 10px;">
+          Send
+      </button>
+ </form>
+ 
+ <!-- Modal -->
+ <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="emailModalLabel">Information</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-
-    </form>
-
+      <div class="modal-body">
+        "Oops, I don't accept emails. Sorry about that!" =P
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
 
   </main>
 
@@ -67,6 +82,6 @@
   </footer>
    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
