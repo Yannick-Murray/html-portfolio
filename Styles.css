@@ -1,0 +1,304 @@
+/* Variables & Base Styles */
+:root {
+    --primary-color: #2d3e50;
+    --accent-color: #e74c3c;
+    --text-color: #2c3e50;
+    --light-bg: #f8f9fa;
+    --transition: all 0.3s ease;
+    --border-radius: 8px;
+    --shadow-sm: 0 2px 15px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 15px rgba(0,0,0,0.05);
+    --content-width: 1200px;
+}
+
+/* Global Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Layout Components */
+.container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, var(--primary-color), #34495e) !important;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.rounded-circle {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    transition: var(--transition);
+    will-change: transform;
+}
+
+.rounded-circle:hover {
+    transform: scale(1.05);
+    border-color: var(--accent-color);
+}
+
+/* Navigation */
+.nav-custom {
+    background-color: var(--primary-color) !important;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-outline-danger {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transition: var(--transition);
+    will-change: transform;
+}
+
+.btn-outline-danger:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.2);
+}
+
+/* Progress Bars */
+.progress {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: var(--transition);
+    will-change: transform;
+}
+
+.progress:hover {
+    transform: translateX(5px);
+}
+
+.progress-bar {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    transition: width 1.5s ease-in-out;
+    position: relative;
+    padding-right: 2rem;
+}
+
+.progress-bar::after {
+    content: '▾';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,0.8);
+    transition: transform 0.3s ease;
+}
+
+.progress.active .progress-bar::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Experience & Skills Common */
+.expandable-section {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background: var(--light-bg);
+    border-radius: var(--border-radius);
+    margin: 0.5rem 0;
+}
+
+.expandable-section.active {
+    max-height: 500px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+/* Work Experience */
+.accomplishments {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background: var(--light-bg);
+    border-radius: var(--border-radius);
+    margin: 0.5rem 0;
+    border-left: 3px solid var(--accent-color);
+}
+
+.accomplishments.active {
+    max-height: 500px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.toggle-accomplishments {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    cursor: pointer;
+    padding: 0;
+    margin-left: 0.5rem;
+    transition: var(--transition);
+}
+
+.toggle-accomplishments:hover {
+    transform: translateX(5px);
+}
+
+.toggle-accomplishments svg {
+    transition: var(--transition);
+}
+
+.toggle-accomplishments.active svg {
+    transform: rotate(90deg);
+}
+
+/* List Styles */
+li {
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+/* Skills Details */
+.skill-container {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.skill-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background: var(--light-bg);
+    border-radius: var(--border-radius);
+    margin: 0.5rem 0;
+    border-left: 3px solid var(--primary-color);
+}
+
+.skill-details.active {
+    max-height: 500px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.accomplishment-item::before,
+.skill-detail-item::before {
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.accomplishment-item::before {
+    content: '↗';
+    color: var(--accent-color);
+}
+
+.skill-detail-item::before {
+    content: '⚡';
+    color: var(--primary-color);
+}
+
+/* Recent Work */
+.img-thumbnail {
+    transition: var(--transition);
+    border: none;
+    border-radius: var(--border-radius);
+    will-change: transform;
+}
+
+.img-thumbnail:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color) !important;
+}
+
+footer a {
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--accent-color) !important;
+    text-decoration: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container > * {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+    
+    .rounded-circle {
+        width: 150px;
+        margin-bottom: 1rem;
+    }
+    
+    .nav-custom {
+        padding: 1rem 0;
+    }
+    
+    .btn-outline-danger {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .progress {
+        height: 20px !important;
+    }
+}

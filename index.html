@@ -1,123 +1,239 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yannick Murray</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <meta name="description" content="Portfolio von Yannick Murray - Product Owner und Web Developer">
+    <meta name="theme-color" content="#2d3e50">
+    <title>Yannick Murray - Product Owner & Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
   <header class="bg-primary bg-gradient text-white py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-3 text-left text-md-center mb-3">
-          <img class="rounded-circle img-fluid" src="./assets/Yannick.jpg" alt="Profile Photo" />
+          <img class="rounded-circle img-fluid" src="./assets/Yannick.jpg" alt="Yannick Murray - Product Owner" width="200" height="200" loading="eager" />
         </div>
         <div class="col-md-9">
           <h1>Yannick Murray</h1>
           <h5>Product Owner</h5>
-          <p class="border-top pt-3">Hey, I´m Yannick. I´m an expierenced and dedicated Product Owner and a noobish Web-developer. This CV is kind of my first project, which is still under construction.</p>
+          <p class="border-top pt-3">Hey, I´m Yannick. I´m an experienced and dedicated Product Owner and a noobish Web-developer. This CV is kind of my first project, which is still under construction.</p>
         </div>       
       </div>        
     </div>
   </header>
 
-  <nav class="bg-dark text-white-50 mb-5">
+  <nav class="bg-dark text-white-50 mb-5 nav-custom">
     <div class="container">
      <div class="row p-3">
-       <div class="col-md pb-2 pb-md-0">
-        <button type="button" class="btn btn-outline-danger">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-android" viewBox="0 0 16 16">
-          <path d="M2.76 3.061a.5.5 0 0 1 .679.2l1.283 2.352A8.9 8.9 0 0 1 8 5a8.9 8.9 0 0 1 3.278.613l1.283-2.352a.5.5 0 1 1 .878.478l-1.252 2.295C14.475 7.266 16 9.477 16 12H0c0-2.523 1.525-4.734 3.813-5.966L2.56 3.74a.5.5 0 0 1 .2-.678ZM5 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m6 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
-          </svg>
-      <a href="./public/Skill-Set.html" class="text-white ml-2">Skills</a>
-        </button>
-          
-       </div>
        <div class="col-md text-md-center pb-2 pb-md-0">
-        <button type="button" class="btn btn-outline-danger">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
-          <path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0M2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z"></path>
+        <a href="./public/Projects.html" class="btn btn-outline-danger">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
+            <path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0M2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z"/>
           </svg>
-        <a href="./public/Projects.html" class="text-white ml-2">Projects</a>
-        </button>
+          <span class="ml-2">Projects</span>
+        </a>
         </div>       
         <div class="col-md text-md-right">
-          <button type="button" class="btn btn-outline-danger">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
-            <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"></path>
+          <a href="./public/contact.html" class="btn btn-outline-danger">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+              <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
             </svg>
-            <a href="./public/contact.html" class="text-white ml-2">Contact</a>
-          </button>
+            <span class="ml-2">Contact</span>
+          </a>
         </div>       
       </div>
     </div>
   </nav>
 
-
-
   <main class="container">
     <div class="row">
-      <div class="col-md mb-5">
+      <section class="col-md mb-5">
         <h2 class="mb-5">Work Experience</h2>
         <ul>
           <li>
             <h6 class="text-primary">Product Owner - awintaOne | {Noventi Health SE}<br> 2024-now</h6>
             <p>I'm a Product Owner for one of the company's ERP product lines. Together with my 9-person team—6 developers and 2 QA specialists—we tackle the technical, legal and User challenges of our system. Despite being part of a large organizational structure, we work in a fully agile way.</p>
+            <button class="toggle-accomplishments" onclick="toggleAccomplishments(this)" aria-expanded="false">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+              <span>Accomplishments</span>
+            </button>
+            <div class="accomplishments" role="region" aria-hidden="true">
+              <div class="accomplishment-item">Established new agile ceremonies, improving team velocity by 15%</div>
+              <div class="accomplishment-item">Successfully migrated legacy systems while maintaining 100% uptime</div>
+              <div class="accomplishment-item">Achieved 100% regulatory compliance while consistently delivering 2+ user-requested features per sprint</div>
+            </div>
           </li>
           <li>
             <h6 class="text-primary">Product Owner - WebShop | {Gravis Computervertriebsgesellschaft mbH}<br>2022-2024</h6>
-            <p>As the owner of the webshop, I led a 6-person project team to take the online store to the next level, building features for both B2C and B2B customers. Along the way, we boosted key KPIs and created significant added value.
-
-            </p>
+            <p>As the owner of the webshop, I led a 6-person project team to take the online store to the next level, building features for both B2C and B2B customers. Along the way, we boosted key KPIs and created significant added value.</p>
+            <button class="toggle-accomplishments" onclick="toggleAccomplishments(this)" aria-expanded="false">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+              <span>Accomplishments</span>
+            </button>
+            <div class="accomplishments" role="region" aria-hidden="true">
+              <div class="accomplishment-item">Increased conversion rate by 35% through UX improvements</div>
+              <div class="accomplishment-item">Implemented B2B portal resulting in 45% growth in business sales</div>
+              <div class="accomplishment-item">Reduced cart abandonment rate by 28%</div>
+              <div class="accomplishment-item">Achieved 99.8% system availability</div>
+            </div>
           </li>
           <li>
             <h6 class="text-primary">Product Owner - PoaaS | {Agentur WebFox}<br>2020-2022</h6>
             <p>As a Product Owner working alongside an Agile Master, I collaborated directly with clients on their products. These clients ranged from small businesses to large corporations like Audi AG and Gegenbauer.</p>
+            <button class="toggle-accomplishments" onclick="toggleAccomplishments(this)" aria-expanded="false">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+              <span>Accomplishments</span>
+            </button>
+            <div class="accomplishments" role="region" aria-hidden="true">
+              <div class="accomplishment-item">Delivered successful projects with 100% client satisfaction</div>
+              <div class="accomplishment-item">Reduced average time-to-market by 40%</div>
+              <div class="accomplishment-item">Implemented agile practices resulting in 30% efficiency improvement</div>
+            </div>
           </li>
         </ul>
-      </div>
+      </section>
       
-      <div class="col-md mb-5">
+      <section class="col-md mb-5">
         <h2 class="mb-5">Skills</h2>      
-          <div class="progress mb-4" style="height:25px;">
-            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 65%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">HTML</div>
-          </div>       
-          <div class="progress mb-4" style="height:25px;">
-            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 60%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">CSS</div>
-          </div> 
-          <div class="progress mb-4" style="height:25px;">
-            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 35%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
-          </div>                     
-          <div class="progress mb-4" style="height:25px;">
-            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Attlassian</div>
-          </div> 
-          <div class="progress mb-4" style="height:25px;">
-            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Azure DevOps</div>
-          </div> 
-          <div class="progress mb-4" style="height:25px;">
-            <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 90%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Project Skills</div>
-      </div>
-      <div class="col-md">    
+          <div class="skill-container">
+            <div class="progress mb-4" style="height:25px;" onclick="toggleSkillDetails(this)" role="button" tabindex="0" aria-expanded="false">
+              <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">HTML</div>
+            </div>
+            <div class="skill-details" role="region" aria-hidden="true">
+              <div class="skill-detail-item">Development of responsive and accessible websites</div>
+              <div class="skill-detail-item">Semantic HTML5 structuring</div>
+              <div class="skill-detail-item">SEO-optimized markup creation</div>
+            </div>
+          </div>
+
+          <div class="skill-container">
+            <div class="progress mb-4" style="height:25px;" onclick="toggleSkillDetails(this)" role="button" tabindex="0" aria-expanded="false">
+              <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 60%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">CSS</div>
+            </div>
+            <div class="skill-details" role="region" aria-hidden="true">
+              <div class="skill-detail-item">Modern CSS layouts with Flexbox and Grid</div>
+              <div class="skill-detail-item">Responsive design and mobile-first approach</div>
+              <div class="skill-detail-item">CSS animations and transitions</div>
+            </div>
+          </div>
+
+          <div class="skill-container">
+            <div class="progress mb-4" style="height:25px;" onclick="toggleSkillDetails(this)" role="button" tabindex="0" aria-expanded="false">
+              <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 35%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+            </div>
+            <div class="skill-details" role="region" aria-hidden="true">
+              <div class="skill-detail-item">DOM manipulation and event handling</div>
+              <div class="skill-detail-item">Basic JavaScript functionalities</div>
+            </div>
+          </div>
+
+          <div class="skill-container">
+            <div class="progress mb-4" style="height:25px;" onclick="toggleSkillDetails(this)" role="button" tabindex="0" aria-expanded="false">
+              <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Atlassian</div>
+            </div>
+            <div class="skill-details" role="region" aria-hidden="true">
+              <div class="skill-detail-item">Jira for agile project management</div>
+              <div class="skill-detail-item">Confluence for documentation and collaboration</div>
+              <div class="skill-detail-item">Integration of Atlassian tools in development workflows</div>
+            </div>
+          </div>
+
+          <div class="skill-container">
+            <div class="progress mb-4" style="height:25px;" onclick="toggleSkillDetails(this)" role="button" tabindex="0" aria-expanded="false">
+              <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Azure DevOps</div>
+            </div>
+            <div class="skill-details" role="region" aria-hidden="true">
+              <div class="skill-detail-item">Azure Boards for project management</div>
+              <div class="skill-detail-item">CI/CD pipeline configuration</div>
+              <div class="skill-detail-item">Release management and deployment strategies</div>
+            </div>
+          </div>
+
+          <div class="skill-container">
+            <div class="progress mb-4" style="height:25px;" onclick="toggleSkillDetails(this)" role="button" tabindex="0" aria-expanded="false">
+              <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 90%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Project Skills</div>
+            </div>
+            <div class="skill-details" role="region" aria-hidden="true">
+              <div class="skill-detail-item">Agile methodologies (Scrum, Kanban)</div>
+              <div class="skill-detail-item">Stakeholder management and communication</div>
+              <div class="skill-detail-item">Roadmap development and strategic planning</div>
+            </div>
+          </div>
+
+          <div class="skill-container">
+            <div class="progress mb-4" style="height:25px;" onclick="toggleSkillDetails(this)" role="button" tabindex="0" aria-expanded="false">
+              <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">AI</div>
+            </div>
+            <div class="skill-details" role="region" aria-hidden="true">
+              <div class="skill-detail-item">Integration of AI tools in development workflows</div>
+              <div class="skill-detail-item">Prompt engineering for optimal AI utilization</div>
+              <div class="skill-detail-item">AI-driven process optimization and automation</div>
+            </div>
+          </div>
+      </section>
+
+      <section class="col-md">    
         <h2 class="mb-5">Recent Work</h2> 
           <div class="row">
             <div class="col-md mb-3">
-              <a href="#">
-                <img class ="img-fluid img-thumbnail" src="./assets/Project_1_this_Site.png" data-toggle="tooltip" data-placement="top" title="actually, this Site!">
+              <a href="#" class="project-link">
+                <img class="img-fluid img-thumbnail" src="./assets/Project_1_this_Site.png" alt="Portfolio Website Project" width="400" height="300" loading="lazy" data-toggle="tooltip" data-placement="top" title="Actually, this site!">
               </a>
             </div> 
           </div> 
-      </div>     
+      </section>     
     </div>
-  
   </main>
 
   <footer class="bg-dark text-white-50 text-center mt-5 p-3">
-    &copy; 2024 Yannick Murray - <a href="https://github.com/Yannick-Murray" class="text-white-50">GitHub</a> | <a href="https://de.linkedin.com/in/yannick-murray-03866ab8" class="text-white-50">LinkedIn</a> | <a href="https://www.xing.com/profile/Yannick_Murray" class="text-white-50">Xing</a></a>
+    <p class="mb-0">
+      &copy; 2024 Yannick Murray - 
+      <a href="https://github.com/Yannick-Murray" class="text-white-50" target="_blank" rel="noopener">GitHub</a> | 
+      <a href="https://de.linkedin.com/in/yannick-murray-03866ab8" class="text-white-50" target="_blank" rel="noopener">LinkedIn</a> | 
+      <a href="https://www.xing.com/profile/Yannick_Murray" class="text-white-50" target="_blank" rel="noopener">Xing</a>
+    </p>
   </footer>
-   
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // Utility function for toggling sections
+    function toggleSection(element, targetClass) {
+      const section = element.nextElementSibling;
+      const isExpanded = element.getAttribute('aria-expanded') === 'true';
+      
+      element.setAttribute('aria-expanded', !isExpanded);
+      section.setAttribute('aria-hidden', isExpanded);
+      element.classList.toggle('active');
+      section.classList.toggle('active');
+    }
+
+    function toggleAccomplishments(button) {
+      toggleSection(button, 'accomplishments');
+    }
+
+    function toggleSkillDetails(progressBar) {
+      toggleSection(progressBar, 'skill-details');
+    }
+
+    // Initialize tooltips
+    document.addEventListener('DOMContentLoaded', function() {
+      const tooltips = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'));
+      tooltips.forEach(function(tooltip) {
+        new bootstrap.Tooltip(tooltip);
+      });
+    });
+  </script>
 </body>
 </html>
