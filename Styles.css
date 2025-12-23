@@ -236,6 +236,87 @@ li::before {
 }
 
 /* Recent Work */
+.project-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    border-left: 3px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.project-card .project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-card .img-thumbnail {
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-placeholder {
+    background: linear-gradient(135deg, var(--primary-color), #34495e);
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.project-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.project-description {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.project-tag {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.project-tag:hover {
+    transform: scale(1.05);
+}
+
 .img-thumbnail {
     transition: var(--transition);
     border: none;
@@ -244,8 +325,7 @@ li::before {
 }
 
 .img-thumbnail:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+    transform: scale(1.02);
 }
 
 /* Footer */
@@ -300,5 +380,14 @@ footer a:hover {
     
     .progress {
         height: 20px !important;
+    }
+    
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .project-card .img-thumbnail,
+    .project-placeholder {
+        height: 200px;
     }
 }
